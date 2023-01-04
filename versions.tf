@@ -16,5 +16,13 @@ terraform {
 }
 
 provider "aws" {
+  default_tags {
+
+    tags = {
+      Enviroment = "data-dev"
+      Project    = "DataLake-infrastructure"
+    }
+  }
+
   region = var.region
 }
