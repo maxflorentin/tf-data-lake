@@ -38,5 +38,9 @@ variable "ec2_count" {
     error_message = "The amount of EC2s must be valid range 1 - 2."
 
   }
+}
 
+variable "bucket_name" {
+  type = string
+  default = ""
 }
